@@ -31,7 +31,7 @@ public class loginSteps {
 	@When("user enters the {string} and {string}")
 	public void user_enters_the_and(String userID, String password) {
 		
-		System.out.println("inside When step");
+		System.out.println("Inside When step");
 		System.out.println(userID);
 		System.out.println("driver :"+driver);
 		gmailLoginpage.clickNext(userID,password);
@@ -39,7 +39,7 @@ public class loginSteps {
 
 	@And("clicks on login button")
 	public void clicks_on_login_button() {
-		System.out.println("inside And step");
+		System.out.println("Inside And step");
 		gmailLoginpage.loginToPage();
 	}
 
