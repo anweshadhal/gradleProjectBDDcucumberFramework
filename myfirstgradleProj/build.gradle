@@ -44,6 +44,10 @@ dependencies {
 	// https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
 	testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '6.8.1'
 	
+	// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+	testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.3'
+	
+	
 	
     
 }

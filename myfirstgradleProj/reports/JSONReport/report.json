@@ -3,91 +3,74 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-01-17T09:03:36.322Z",
-        "line": 13,
-        "name": "Check login is successful with valid credentials",
+        "start_timestamp": "2021-01-24T12:31:42.387Z",
+        "line": 12,
+        "name": "To validate the HTTP get method",
         "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "id": "to-validate-different-apis-for-different-http-methods;to-validate-the-http-get-method;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 13315000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user is on login page",
+            "name": "user is given with the get method to be automated",
             "match": {
-              "location": "StepDefinitions.loginSteps.user_is_on_login_page()"
+              "location": "StepDefinitions.APISteps.user_is_given_with_the_get_method_to_be_automated()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 664000000,
+              "duration": 5699000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters the \"anwesha.dhal95@gmail.com\" and \"Mamuni1995\"",
+            "name": "hit the get method",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"anwesha.dhal95@gmail.com\"",
-                  "offset": 16
-                },
-                {
-                  "val": "\"Mamuni1995\"",
-                  "offset": 47
-                }
-              ],
-              "location": "StepDefinitions.loginSteps.user_enters_the_and(java.lang.String,java.lang.String)"
+              "location": "StepDefinitions.APISteps.hit_the_get_method()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 138000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "clicks on login button",
+            "name": "validate that the user should get response with the 200",
             "match": {
-              "location": "StepDefinitions.loginSteps.clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user should be navigated to the home page",
-            "match": {
-              "location": "StepDefinitions.loginSteps.user_should_be_navigated_to_the_home_page()"
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefinitions.APISteps.validate_that_the_user_should_get_response_with_the(java.lang.Integer)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@LoginFeature"
+            "name": "@APITest"
           },
           {
-            "name": "@login"
+            "name": "@get"
           }
         ]
       }
     ],
-    "name": "feature to test login functionality",
+    "name": "To validate different APIs for different HTTP methods",
     "description": "",
-    "id": "feature-to-test-login-functionality",
+    "id": "to-validate-different-apis-for-different-http-methods",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Feature/login.feature",
+    "uri": "file:src/test/resources/Feature/APIFeature.feature",
     "tags": [
       {
-        "name": "@LoginFeature",
+        "name": "@APITest",
         "type": "Tag",
         "location": {
           "line": 1,
